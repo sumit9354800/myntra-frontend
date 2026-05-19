@@ -14,7 +14,7 @@ const FetchItem = () => {
     const signal = controller.signal;
 
     dispatch(fetchStatusActions.markFetchingStarted());
-    fetch("http://localhost:8080/items", { signal })
+    fetch("https://myntra-backend-3yiv.onrender.com", { signal })
       .then((res) => res.json())
       .then(({ items }) => {
         // console.log(items)
